@@ -1,0 +1,22 @@
+
+/* Main */
+
+	#main {
+		min-height: calc(100vh - 278px);
+		background-color: #ffffff;
+
+		> * {
+			border-top: solid 1px _palette(border);
+
+			&:first-child {
+				border-top: 0;
+			}
+
+			@include inner;
+		}
+
+		&.alt {
+			background-color: transparent;
+			border-bottom: solid 1px _palette(border);
+		}
+	}

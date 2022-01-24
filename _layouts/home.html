@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div id="main" class="home">
+        <!-- Banner -->
+        <section class="banner">
+            <div>
+                <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+            </div>
+            <div class="content">
+                <header class="major">
+                    <h1 class="h1">{{ page.title-shown }}</h1>
+                </header>
+
+                <!--<div class="card">
+                    <span>{{ page.card_title }}</span>
+                    <p>
+                        {{ page.card_description }}
+                    </p>
+                    <div class="pull-right">
+                        <a href="/user#alpha">Apply</a>
+                    </div>
+                </div>-->
+            </div>
+
+
+        </section>
+
+        <!-- Main -->
+        <div>
+
+            {{ content }}
+
+        </div>
+    </div>
+    {% include footer.html %}
+
+</body>
+
+</html>
